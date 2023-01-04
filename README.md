@@ -26,9 +26,9 @@
  > <b>Note!</b>
   1. Ensure you give credentials of your s3bucket correctly.
 
-> <b>Lastly!</b>
+> <b>Lastly!  Generate Csv </b>
 
-* Generate Csv and all the functions and classes are inside src folder.
+* All the functions and classes are inside src folder.
 
     ```php
     php index.php
