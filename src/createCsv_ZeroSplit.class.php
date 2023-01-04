@@ -180,8 +180,10 @@ class Csv_ZeroSplit{
         echo("[\033[0;37m".current_time()."\033[1;37m] Number of lines: " . $count . " \n");
 
         echo("[\033[0;37m".current_time()."\033[1;37m] File Name:".$csvFile . "\n");
+
         $zipped_file = exec("zip -r ${filename} ${csvFile}");
-        echo("[\033[0;37m".current_time()."\033[1;37m] Zip file :".$filename.zip . "\n");
+        echo("[\033[0;37m".current_time()."\033[1;37m] Zip file :".$zipped_file. "\n");
+        
         $file = filesize($csvFile);
         // Filesize in MB
         $filesize = $file/1024/1024;

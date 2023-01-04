@@ -1,11 +1,35 @@
-""" This is a automated script to download zstandard zipped files from the cloud and unzip it automatically to jsonlines.
+# S3-Buckect jsonlines to CSV
 
-""First of all you need to clone this repository.
+> This is a automated script to download zstandard zipped files from the cloud and unzip it automatically to jsonlines.
 
-"Do a quick ~composer install~ as the root of this folder.
+<!--Unordered lists-->
+* Clone this repository to your computer.
+    ```
+    git clone https://github.com/KimelirR/create_ZeroSplitCSV-S3BUCKET.git
+    ```
+* Create .env file 
+    ```
+    cp .env.example .env
+    ```
+* **Provide credentials of your S3-BUCKET below in .env file**
+   ~~~
+    KEY=?
+    SECRET=?
+    REGION=?
+    BUCKET=?
+   ~~~
 
-```composer install```
+* Install required dependencies through 
+  ```
+   composer install
+  ```
+ > <b>Note!</b>
+  1. Ensure you give credentials of your s3bucket correctly.
 
-#Ensure you give credentials of your s3bucket correctly
+> <b>Lastly!</b>
 
-"""Lastly, Generate Csv and all the functions and classes are inside src folder.
+* Generate Csv and all the functions and classes are inside src folder.
+
+    ```php
+    php index.php
+    ```
